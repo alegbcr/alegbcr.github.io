@@ -1,0 +1,40 @@
+#contact .card__contact {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+  background-color: #252525;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .card__contact picture img {
+  width: 100%;
+}
+
+#contact .card__contact .design {
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+#contact .form__container {
+  width: 100%;
+}
+
+#contact .card__contact picture img {
+  width: 58%;
+}
+
+#contact .form__container {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+#contact .form__container .form {
+  width: 80%;
+}

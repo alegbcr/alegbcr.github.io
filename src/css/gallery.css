@@ -1,0 +1,121 @@
+:root {
+  /* Colors */
+  --black: #222222;
+  --white: #ffffff;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  color: var(--white);
+  background-color: #222222;
+}
+
+/* HEARDER */
+
+/* nav */
+header {
+  position: sticky;
+  top: 0px;
+  background-color: var(--black);
+}
+
+nav li a,
+nav picture a {
+  color: var(--white) !important;
+}
+
+nav picture img {
+  width: 40px;
+}
+
+nav ul li i {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+  /* border-color: #fff; */
+}
+
+/* /HEARDER */
+
+/* BODY */
+#gallery .title__gallery {
+  display: flex;
+}
+
+#gallery .title__gallery--item {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: 100vw;
+  display: block;
+}
+
+#gallery .title__gallery--item h1,
+#gallery .title__gallery--item p {
+  display: flex;
+  display: block;
+  text-align: center;
+}
+
+#gallery .card__gallery {
+  /* height: 400px; */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+  background-color: #252525;
+  border-radius: 1.5rem;
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+
+#gallery .card__gallery .card__gallery--item {
+  display: flex;
+  align-items: center;
+}
+
+#gallery .card__gallery .card__gallery--item img {
+  width: 110%;
+}
+
+#gallery .card__gallery .card__gallery--item img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#gallery .card__gallery:hover {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+#arts {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#arts .card__gallery {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #252525;
+  border-radius: 1.5rem;
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+
+#arts .card__gallery .card__gallery--item {
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+}
+
+#arts .card__gallery .card__gallery--item img {
+  width: 110%;
+}
+
+/* /main */
+
+/* /BODY */

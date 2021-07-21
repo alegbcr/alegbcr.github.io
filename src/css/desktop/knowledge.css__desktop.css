@@ -1,0 +1,9 @@
+main {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+main picture img {
+  width: 60%;
+}

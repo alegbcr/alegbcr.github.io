@@ -1,0 +1,165 @@
+:root {
+  /* Colors */
+  --black: #222222;
+  --white: #ffffff;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  color: var(--white);
+  background-color: #222222;
+}
+
+/* HEARDER */
+
+/* nav */
+header {
+  position: sticky;
+  top: 0px;
+  background-color: var(--black);
+  z-index: 100;
+}
+
+nav li a,
+nav picture a {
+  color: var(--white) !important;
+}
+
+nav picture img {
+  width: 40px;
+}
+
+nav ul li i {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+  /* border-color: #fff; */
+}
+
+/* /HEARDER */
+
+/* BODY */
+
+/* main */
+main .container-fluid {
+  height: 70vh;
+}
+
+#home {
+  position: relative;
+}
+
+#home picture {
+  display: flex;
+  align-content: flex-end;
+  height: 100%;
+}
+
+#home picture img {
+  padding-bottom: 100px;
+}
+
+#home .overlay {
+  position: absolute;
+  /* background-color: #333333; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#home .overlay h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  color: var(--white);
+  text-shadow: -6px 8px 3px rgba(233, 233, 233, 0.1);
+  font-family: "Gruppo", cursive;
+}
+
+#home .overlay .lastname {
+  text-align: center;
+}
+
+#home .overlay .row h2 {
+  border-top: 2px solid #fff;
+}
+
+#home .overlay .row p {
+  border-bottom: 0px solid #fff;
+}
+
+#home .overlay .subtitle {
+  display: flex;
+  text-align: center;
+}
+
+#home .overlay .container,
+#home .overlay .row {
+  height: 100%;
+}
+
+#home .overlay .row {
+  display: flex;
+}
+
+#home .overlay .col h2 {
+  padding-top: 15px;
+  margin-top: 295px;
+}
+
+#home .overlay .col p {
+  text-align: center;
+}
+
+#home .overlay .subtitle,
+#home .overlay p {
+  display: flex;
+  display: block;
+  text-align: center;
+}
+
+/* About */
+#about {
+  height: 80vh;
+  padding-top: 10px;
+}
+
+#about .about__biography h3 {
+  display: none;
+}
+
+#about .about__biography h3,
+#about .about__biography p {
+  text-align: center;
+}
+
+#about picture .logo {
+  width: 50%;
+}
+
+/* Experience */
+#experience {
+  height: 70vh;
+}
+
+#experience .title__experience {
+  text-align: center;
+}
+
+#experience .card__experince {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #252525;
+  border-radius: 1.5rem;
+  padding: 10px 5px;
+  display: flex;
+  align-self: center;
+}
+
+/* /main */
+
+/* /BODY */

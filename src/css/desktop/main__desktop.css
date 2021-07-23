@@ -20,7 +20,6 @@ main .container-fluid {
 
 #home .overlay {
   position: absolute;
-  /* background-color: #333333; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -37,17 +36,22 @@ main .container-fluid {
 }
 
 #home .overlay .lastname {
-  padding-right: 100px;
+  padding-left: 250px;
   text-align: end;
 }
 
+#home .overlay .paragraph_secundary {
+  display: flex;
+  align-items: center;
+}
+
 #home .overlay .row h2 {
-  border-top: 0 solid #fff;
+  border-right: 2px solid #fff;
 }
 
 #home .overlay .row p {
-  border-bottom: 9px solid #fff;
-  font-size: 2rem;
+  /* border-bottom: 9px solid #fff; */
+  font-size: 1.8rem;
   text-align: justify;
 }
 

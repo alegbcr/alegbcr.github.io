@@ -44,6 +44,8 @@ nav ul li i {
 /* BODY */
 #contact {
   display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 #contact .title__contact {
@@ -54,7 +56,6 @@ nav ul li i {
   display: flex;
   justify-content: center;
   height: 120px;
-  width: 100vw;
   display: block;
 }
 

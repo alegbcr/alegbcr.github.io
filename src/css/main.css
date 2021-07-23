@@ -55,12 +55,12 @@ main .container-fluid {
 
 #home picture {
   display: flex;
-  align-content: flex-end;
+  align-content: center;
   height: 100%;
 }
 
 #home picture img {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 #home .overlay {
@@ -70,6 +70,7 @@ main .container-fluid {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
 }
 
 #home .overlay h1 {
@@ -84,48 +85,56 @@ main .container-fluid {
   text-align: center;
 }
 
-#home .overlay .row h2 {
-  border-top: 2px solid #fff;
-}
-
-#home .overlay .row p {
-  border-bottom: 0px solid #fff;
-}
-
-#home .overlay .subtitle {
+#home .overlay .row {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
 }
 
-#home .overlay .container,
+#home .overlay .paragraph_secundary h2 {
+  text-align: center;
+  display: block;
+  border-right: 2px solid #fff;
+}
+
+#home .overlay .paragraph_secundary {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* #home .overlay .container, */
 #home .overlay .row {
   height: 100%;
 }
 
-#home .overlay .row {
+/* #home .overlay .row {
+} */
+
+#home .overlay .paragraph_secundary h2 {
+  /* display: inline-block;
   display: flex;
+  text-align: flex-end; */
+  /* padding-top: 15px; */
+  /* margin-top: 295px; */
 }
 
-#home .overlay .col h2 {
-  padding-top: 15px;
-  margin-top: 295px;
-}
-
-#home .overlay .col p {
-  text-align: center;
+#home .overlay .paragraph_secundary p {
+  display: block;
+  text-align: start;
+  padding-left: 0.5rem;
 }
 
 #home .overlay .subtitle,
 #home .overlay p {
-  display: flex;
+  /* display: flex; */
   display: block;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* About */
 #about {
-  height: 80vh;
+  height: 100%;
   padding-top: 10px;
+  margin-bottom: 1rem;
 }
 
 #about .about__biography h3 {
@@ -163,3 +172,97 @@ main .container-fluid {
 /* /main */
 
 /* /BODY */
+
+/* @media screen and (max-heigth: 730px) {
+  #home {
+    position: relative;
+  }
+
+  #home picture {
+    display: flex;
+    align-content: flex-end;
+    height: 100%;
+  }
+
+  #home picture img {
+    padding-bottom: 50px;
+  }
+
+  #home .overlay {
+    position: absolute; */
+/* background-color: #333333; */
+/* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #home .overlay h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    color: var(--white);
+    text-shadow: -6px 8px 3px rgba(233, 233, 233, 0.1);
+    font-family: "Gruppo", cursive;
+  }
+
+  #home .overlay .lastname {
+    text-align: center;
+  }
+
+  #home .overlay .row h2 {
+    border-top: 2px solid #fff;
+  }
+
+  #home .overlay .row p {
+    border-bottom: 0px solid #fff;
+  }
+
+  #home .overlay .subtitle {
+    display: flex;
+    text-align: center;
+  }
+
+  #home .overlay .container,
+  #home .overlay .row {
+    height: 100%;
+  }
+
+  #home .overlay .row {
+    display: flex;
+  }
+
+  #home .overlay .col h2 {
+    padding-top: 15px;
+    margin-top: 295px;
+  }
+
+  #home .overlay .col p {
+    text-align: center;
+  }
+
+  #home .overlay .subtitle,
+  #home .overlay p {
+    display: flex;
+    display: block;
+    text-align: center;
+  } */
+
+/* About */
+/* #about {
+    height: 80vh;
+    padding-top: 10px;
+  }
+
+  #about .about__biography h3 {
+    display: none;
+  }
+
+  #about .about__biography h3,
+  #about .about__biography p {
+    text-align: center;
+  }
+
+  #about picture .logo {
+    width: 50%;
+  }
+} */

@@ -36,8 +36,8 @@ import useWindowSize from "./useWindowSize";
 const initialState = {
   // MENU
   info: {
-    // logo: `${googleDrivePhotosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
-    logo: logo,
+    logo: `${googleDrivePhotosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
+    // logo: logo,
     logoMenu: "",
     categories: [
       {
@@ -87,7 +87,7 @@ const initialState = {
     name: "soy Alex",
     description:
       "Soy un freelance versátil con habilidades tanto en diseño gráfico como en desarrollo web.",
-    picture: me,
+    picture: `${googleDrivePhotosURL}1XgFgGRA8yPZIF_Uy7qHFD8KYBcEABBfZ`,
     detail: "imagen de Alexander",
   },
   about: {
@@ -113,6 +113,7 @@ const initialState = {
       "Si están buscando alguien que pueda ofrecer soluciones creativas e innovadoras para sus proyectos digitales, no dude en contactarme. ¡Estoy listo para ayudarlos!",
 
     logo: `${googleDrivePhotosURL}1u6R4OHQqA_JWtjV-wsuYQUh_VIZM-KW4`,
+
     books: [
       {
         id: 1,

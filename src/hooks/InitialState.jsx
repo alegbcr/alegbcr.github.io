@@ -2,7 +2,12 @@ import React, { useState } from "react";
 // URL images from postimage
 const photosURL = "https://i.postimg.cc/";
 // Icons
-import { FaLinkedinIn, FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaBehance,
+  FaInstagram,
+  FaTelegramPlane,
+} from "react-icons/fa";
 // Logo Branding
 import logo from "../../public/imagotipo.svg";
 
@@ -11,9 +16,7 @@ import useWindowSize from "./useWindowSize";
 const initialState = {
   // MENU
   info: {
-    // logo: `${photosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
     logo: logo,
-    logoMenu: "",
     categories: [
       {
         id: 1,
@@ -45,11 +48,16 @@ const initialState = {
       },
       {
         id: 2,
+        reference: "https://www.behance.net/alexandgonzale33",
+        iconName: <FaBehance />,
+      },
+      {
+        id: 3,
         reference: "https://www.instagram.com/alegbcr/",
         iconName: <FaInstagram />,
       },
       {
-        id: 3,
+        id: 2,
         reference: "https://t.me/alexgbcr",
         iconName: <FaTelegramPlane />,
       },
@@ -284,7 +292,7 @@ const initialState = {
       },
       {
         name: "logo Isrra Music",
-        image: `${photosURL}d0X01B9D/isrra.png`,
+        image: `${photosURL}sgrK5Nkt/isrra.png`,
       },
     ],
   },

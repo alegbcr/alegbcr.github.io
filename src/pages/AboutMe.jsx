@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 // Data
 import AppContext from "../context/AppContext";
 // Components
@@ -23,6 +24,11 @@ import {
 
 const AboutMe = () => {
   const { state } = useContext(AppContext);
+  const navigate = useNavigate();
+
+  const handleContact = () => {
+    navigate("/contact");
+  };
 
   return (
     <>
@@ -60,7 +66,9 @@ const AboutMe = () => {
                   </li>
                 ))}
               </List>
-              <Button classNames="contact__button">Contacto</Button>
+              <Button classNames="contact__button" onClick={handleContact}>
+                Contacto
+              </Button>
             </div>
             <Small className="phrase">Never Give Up!!!</Small>
           </Container>

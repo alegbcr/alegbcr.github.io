@@ -35,7 +35,7 @@ const Contact = () => {
             <Label>Hablame acerca de tu proyecto!</Label>
             <Textarea />
           </InputGroup>
-          <FormButton text="Enviar mensaje" />
+          <FormButton disabled>Enviar mensaje</FormButton>
         </FormContainer>
         <FormContainer className="contact-location__container">
           <p>

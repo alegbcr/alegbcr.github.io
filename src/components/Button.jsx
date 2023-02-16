@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonBase = styled.button`
+export const Button = styled.button`
   border: none;
   padding: 0.7rem 3.5rem;
   border-radius: var(--border-radius);
@@ -28,11 +28,3 @@ export const ButtonBase = styled.button`
     transition: ease-out 0.4s;
   }
 `;
-
-export const Button = ({ buttonAction, classNames, children }) => {
-  return (
-    <ButtonBase onClick={buttonAction} className={classNames}>
-      {children}
-    </ButtonBase>
-  );
-};

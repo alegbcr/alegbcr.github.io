@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonBase } from "../components/Button";
+import { Button } from "../components/Button";
 
 const FormContainerBase = styled.form`
   height: 350px;
@@ -57,7 +57,7 @@ export const FormBackgroundImageContainer = ({ className, children }) => {
 
 /* ------------------------------------------------------------------------------------------ */
 
-const FormButtonBase = styled(ButtonBase)`
+export const FormButton = styled(Button)`
   border: none;
   width: 100%;
   margin-top: 8px;
@@ -65,14 +65,6 @@ const FormButtonBase = styled(ButtonBase)`
   border-radius: var(--border-radius);
   background-color: var(--blue-color);
 `;
-
-export const FormButton = ({ buttonAction, classNames, text }) => {
-  return (
-    <FormButtonBase onClick={buttonAction} className={classNames}>
-      {text}
-    </FormButtonBase>
-  );
-};
 
 /* ------------------------------------------------------------------------------------------ */
 

@@ -1,42 +1,17 @@
 import React, { useState } from "react";
-// Google Drive Display Images
-/* You need to copy the ID from the original URL (the characters between the /d/ and /view), and use it in this URL: */
-const googleDrivePhotosURL = "https://drive.google.com/uc?export=view&id=";
+// URL images from postimage
+const photosURL = "https://i.postimg.cc/";
 // Icons
 import { FaLinkedinIn, FaInstagram, FaTelegramPlane } from "react-icons/fa";
-
-// images
 // Logo Branding
 import logo from "../../public/imagotipo.svg";
-// Home
-// import me from "../assets/home/me.png";
-// Logos
-// import diamond from "../assets/gallery/diamond_property.png";
-// import dogzilla from "../assets/gallery/dogzilla.png";
-// import gallo_loco from "../assets/gallery/gallo_loco.png";
-// import iclean from "../assets/gallery/i-clean.png";
-// import jam from "../assets/gallery/jam.png";
-// import limon_vibes from "../assets/gallery/limon_vibes.png";
-// import meentes_creativas from "../assets/gallery/meentes_creativas.png";
-// import mind_world from "../assets/gallery/mind_world.png";
-// Digital Arts
-// import art1 from "../assets/gallery/01.png";
-// import art2 from "../assets/gallery/02.png";
-// import art3 from "../assets/gallery/03.png";
-// import art4 from "../assets/gallery/04.png";
-// import art5 from "../assets/gallery/05.png";
-// import art6 from "../assets/gallery/06.png";
-// import art7 from "../assets/gallery/07.png";
-// import art8 from "../assets/gallery/08.png";
-// import art9 from "../assets/gallery/09.png";
-// import art10 from "../assets/gallery/10.png";
-// import art11 from "../assets/gallery/11.png";
+
 import useWindowSize from "./useWindowSize";
 
 const initialState = {
   // MENU
   info: {
-    // logo: `${googleDrivePhotosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
+    // logo: `${photosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
     logo: logo,
     logoMenu: "",
     categories: [
@@ -87,7 +62,7 @@ const initialState = {
     name: "soy Alex",
     description:
       "Soy un freelance versátil con habilidades tanto en diseño gráfico como en desarrollo web.",
-    picture: `${googleDrivePhotosURL}1XgFgGRA8yPZIF_Uy7qHFD8KYBcEABBfZ`,
+    picture: `${photosURL}T1MBNLTt/me.png`,
     detail: "imagen de Alexander",
   },
   about: {
@@ -111,8 +86,6 @@ const initialState = {
     ],
     LastParagraph:
       "Si están buscando alguien que pueda ofrecer soluciones creativas e innovadoras para sus proyectos digitales, no dude en contactarme. ¡Estoy listo para ayudarlos!",
-
-    logo: `${googleDrivePhotosURL}1u6R4OHQqA_JWtjV-wsuYQUh_VIZM-KW4`,
 
     books: [
       {
@@ -279,43 +252,39 @@ const initialState = {
     works: [
       {
         name: "logo meentes creativas",
-        image: `${googleDrivePhotosURL}1sl7kFQc74Xb5V2c3KrHDykZgStJZ_cho`,
-        // image: meentes_creativas,
+        image: `${photosURL}zBfSTcJF/meentes-creativas.png`,
       },
       {
         name: "logo limon vibes",
-        image: `${googleDrivePhotosURL}1Jn7fSZIwln7RXkFchzDbko0DNq28Jads`,
-        // image: limon_vibes,
+        image: `${photosURL}mgxwKjwT/limon-vibes.png`,
       },
       {
         name: "logo iclean",
-        image: `${googleDrivePhotosURL}1W8W6hlIgjXgOkdWwsnoW5P4mXyBZObed`,
-        // image: iclean,
+        image: `${photosURL}nVPTGp9j/i-clean.png`,
       },
       {
         name: "logo jam",
-        image: `${googleDrivePhotosURL}1FYkTnHcqo-2rZHVD501GoK4Xs8SvOhs7`,
-        // image: jam,
+        image: `${photosURL}SKdf2hpK/jam.png`,
       },
       {
         name: "logo dogzilla",
-        image: `${googleDrivePhotosURL}1Ahjlg54jkfFYuLqM2a2AedaYCjRWAAtN`,
-        // image: dogzilla,
+        image: `${photosURL}K4Xqvd1Q/dogzilla.png`,
       },
       {
         name: "logo gallo_loco",
-        image: `${googleDrivePhotosURL}1wuQTaGT_WVUWJT7BJ9gl4EVOJevQ_MkP`,
-        // image: gallo_loco,
+        image: `${photosURL}GmkQRD7G/gallo-loco.png`,
       },
       {
         name: "logo diamond",
-        image: `${googleDrivePhotosURL}1D2papj1WC696gkX3HLEUQUmNa9_0BkRl`,
-        // image: diamond,
+        image: `${photosURL}hG1pLmVc/diamond-property.png`,
       },
       {
         name: "logo mind world",
-        image: `${googleDrivePhotosURL}1JnSh9RuO7GXnFqAUSEGcXCpxT9BTQdmO`,
-        // image: mind_world,
+        image: `${photosURL}TPfc3PFS/mind-world.png`,
+      },
+      {
+        name: "logo Isrra Music",
+        image: `${photosURL}d0X01B9D/isrra.png`,
       },
     ],
   },
@@ -325,63 +294,63 @@ const initialState = {
     works: [
       {
         id: 1,
-        image: `${googleDrivePhotosURL}1yMmCz78ALBe9GxkAkVpqOHG7JWRswdee`,
-        // image: art1,
+        image: `${photosURL}j2ZpZ9Nq/phrase.png`,
       },
       {
         id: 2,
-        image: `${googleDrivePhotosURL}1wnc37yCtdKo9cW2XyvZ15rVZv5WlSyEc`,
-        // image: art2,
+        image: `${photosURL}Hk5SLRxJ/01.png`,
       },
       {
         id: 3,
-        image: `${googleDrivePhotosURL}1pFu62E456lDxXcg61hd8w4viBfLncuSG`,
-        // image: art3,
+        image: `${photosURL}xdCFTGsk/missbo.png`,
       },
       {
         id: 4,
-        image: `${googleDrivePhotosURL}1pqnElNaXIRuMizwsAQNrP9SpqPoBZgmZ`,
-        // image: art4,
+        image: `${photosURL}vm28czbC/12.png`,
       },
       {
         id: 5,
-        image: `${googleDrivePhotosURL}1nWjJC95QIUHeN0SyYlGVijcejKltBGIU`,
-        // image: art5,
+        image: `${photosURL}28Gsk5zK/ale.png`,
       },
       {
         id: 6,
-        image: `${googleDrivePhotosURL}1OkWpwP8DNZ4v2jez5A6VgcgbfMU42l2U`,
-        // image: art6,
+        image: `${photosURL}J4s6fGC5/04.png`,
       },
       {
         id: 7,
-        image: `${googleDrivePhotosURL}1rZE9ec2ZD0XIXYk12lbWo3Rg10J6y3sB`,
-        // image: art7,
+        image: `${photosURL}NfZJBBgq/06.png`,
       },
       {
         id: 8,
-        image: `${googleDrivePhotosURL}1unyKnRqN9XpdNyC3k-PuaHFzeIGpk3Mw`,
-        // image: art8,
+        image: `${photosURL}6qmH7NnZ/03.png`,
       },
       {
         id: 9,
-        image: `${googleDrivePhotosURL}1dwe1Drr0jft2b3rNEtN1JIFTpCcON-VS`,
-        // image: art9,
+        image: `${photosURL}RhNdxbyZ/11.png`,
       },
       {
         id: 10,
-        image: `${googleDrivePhotosURL}19n2XbQqMpHwkHaqWRbCQDMz08uhAPKkb`,
-        // image: art10,
+        image: `${photosURL}J0vqr5Cc/10.png`,
       },
       {
         id: 11,
-        image: `${googleDrivePhotosURL}1oBXC-FSYAbBvqAy1HBcMd-1JaXF9ulkj`,
-        // image: art11,
+        image: `${photosURL}nznSg2nX/02.png`,
       },
       {
         id: 12,
-        image: `${googleDrivePhotosURL}1zVRhzxsg4j84u0OjbWKKH6_zNmqq_1lW`,
-        // image: art12,
+        image: `${photosURL}qBbDD2S7/05.png`,
+      },
+      {
+        id: 13,
+        image: `${photosURL}pTkcHjdq/07.png`,
+      },
+      {
+        id: 14,
+        image: `${photosURL}4ydLN37Z/08.png`,
+      },
+      {
+        id: 15,
+        image: `${photosURL}cJSFthgF/09.png`,
       },
     ],
   },
@@ -394,8 +363,7 @@ const initialState = {
         company: "Estación Gourmet",
         profesion: "Diseño Gráfico",
         work: "Desarrollo web",
-        image: `${googleDrivePhotosURL}1yGyQmBQN1tlceXSZTCB9-hicS8UfA8BR`,
-        // image: art1,
+        image: `${photosURL}gjHtMgS0/estacion-gourmet.png`,
         linkPage: "https://estaciongourmet.net/index.php",
         description:
           "Creación de landing page y creación de artes digitales para mostrarse en diferentes redes sociales de interes para la marca",
@@ -405,8 +373,7 @@ const initialState = {
         company: "Dogzilla",
         profesion: "Diseño Gráfico",
         work: "Transformación Digital",
-        image: `${googleDrivePhotosURL}1b2c2q8BC6vx7rbxQIOsSmx4tSB3QSjjP`,
-        // image: art1,
+        image: `${photosURL}63RmZWCn/dogzilla-design.png`,
         description:
           "Creación de artes y animaciones digitales para mostrarse en diferentes redes sociales de interes para la marca, además de consultoria para las mejores prácticas para la transformación digital y branding de la marca.",
       },
@@ -415,7 +382,7 @@ const initialState = {
         company: "Mk Innovations",
         profesion: "Diseño Gráfico",
         work: "Desarrollo web",
-        image: `${googleDrivePhotosURL}14O_6QKKHP5bR5m-y7zCQfa703uQP3mvH`,
+        image: `${photosURL}QMvzV9Kj/mkinnovations.png`,
         // image: art1,
         linkPage: "https://alegbcr.github.io/mkinnovations_page/",
         description:
@@ -426,7 +393,7 @@ const initialState = {
         company: "Mind World",
         profesion: "Diseño Gráfico",
         work: "Transformación Digital",
-        image: `${googleDrivePhotosURL}1oNaK1w5kd4ul1c7NZhxd_hsCDBlg-p2I`,
+        image: `${photosURL}HngP4qtK/mind-world.png`,
         // image: art1,
         description:
           "Desarrollo Javascript Full-Stack para el desarrollo de su producto digital.",
@@ -490,7 +457,7 @@ const initialState = {
     title: "Estemos en contacto",
     description: "Si crees que puedo servir siendo parte de tu proyecto",
     // image: contactImage,
-    image: `${googleDrivePhotosURL}1zVRhzxsg4j84u0OjbWKKH6_zNmqq_1lW`,
+    image: `${photosURL}5QQKtsnD`,
   },
 };
 

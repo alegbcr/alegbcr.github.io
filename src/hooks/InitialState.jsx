@@ -9,28 +9,28 @@ import { FaLinkedinIn, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 // Logo Branding
 import logo from "../../public/imagotipo.svg";
 // Home
-import me from "../assets/home/me.png";
+// import me from "../assets/home/me.png";
 // Logos
-import diamond from "../assets/gallery/diamond_property.png";
-import dogzilla from "../assets/gallery/dogzilla.png";
-import gallo_loco from "../assets/gallery/gallo_loco.png";
-import iclean from "../assets/gallery/i-clean.png";
-import jam from "../assets/gallery/jam.png";
-import limon_vibes from "../assets/gallery/limon_vibes.png";
-import meentes_creativas from "../assets/gallery/meentes_creativas.png";
-import mind_world from "../assets/gallery/mind_world.png";
+// import diamond from "../assets/gallery/diamond_property.png";
+// import dogzilla from "../assets/gallery/dogzilla.png";
+// import gallo_loco from "../assets/gallery/gallo_loco.png";
+// import iclean from "../assets/gallery/i-clean.png";
+// import jam from "../assets/gallery/jam.png";
+// import limon_vibes from "../assets/gallery/limon_vibes.png";
+// import meentes_creativas from "../assets/gallery/meentes_creativas.png";
+// import mind_world from "../assets/gallery/mind_world.png";
 // Digital Arts
-import art1 from "../assets/gallery/01.png";
-import art2 from "../assets/gallery/02.png";
-import art3 from "../assets/gallery/03.png";
-import art4 from "../assets/gallery/04.png";
-import art5 from "../assets/gallery/05.png";
-import art6 from "../assets/gallery/06.png";
-import art7 from "../assets/gallery/07.png";
-import art8 from "../assets/gallery/08.png";
-import art9 from "../assets/gallery/09.png";
-import art10 from "../assets/gallery/10.png";
-import art11 from "../assets/gallery/11.png";
+// import art1 from "../assets/gallery/01.png";
+// import art2 from "../assets/gallery/02.png";
+// import art3 from "../assets/gallery/03.png";
+// import art4 from "../assets/gallery/04.png";
+// import art5 from "../assets/gallery/05.png";
+// import art6 from "../assets/gallery/06.png";
+// import art7 from "../assets/gallery/07.png";
+// import art8 from "../assets/gallery/08.png";
+// import art9 from "../assets/gallery/09.png";
+// import art10 from "../assets/gallery/10.png";
+// import art11 from "../assets/gallery/11.png";
 import useWindowSize from "./useWindowSize";
 
 const initialState = {

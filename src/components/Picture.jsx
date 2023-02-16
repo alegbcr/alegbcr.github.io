@@ -5,7 +5,7 @@ const PictureBase = styled.picture`
 
   &.navigation {
     display: flex;
-    height: 40px;
+    height: 60px;
     width: 120px;
     margin-left: 20px;
   }

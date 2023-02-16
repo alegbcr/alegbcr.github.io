@@ -7,7 +7,7 @@ import { FaLinkedinIn, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 
 // images
 // Logo Branding
-import logo from "../assets/home/logo_white.png";
+import logo from "../../public/imagotipo.svg";
 // Home
 import me from "../assets/home/me.png";
 // Logos
@@ -36,8 +36,8 @@ import useWindowSize from "./useWindowSize";
 const initialState = {
   // MENU
   info: {
-    logo: `${googleDrivePhotosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
-    // logo: logo,
+    // logo: `${googleDrivePhotosURL}1T64qAXwf-Fxshijobw0esDiL9YflJOxX`,
+    logo: logo,
     logoMenu: "",
     categories: [
       {
@@ -380,7 +380,7 @@ const initialState = {
       },
       {
         id: 12,
-        // image: `${googleDrivePhotosURL}1zVRhzxsg4j84u0OjbWKKH6_zNmqq_1lW`,
+        image: `${googleDrivePhotosURL}1zVRhzxsg4j84u0OjbWKKH6_zNmqq_1lW`,
         // image: art12,
       },
     ],

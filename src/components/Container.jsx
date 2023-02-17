@@ -59,6 +59,23 @@ const ContainerBase = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media screen and (min-width: 1280px) and (orientation: landscape) {
+    &.overlay {
+      align-items: center;
+      margin-right: 20%;
+    }
+
+    &.base {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      height: 100%;
+      max-width: 50%;
+      padding-top: 2rem;
+      /* background-color: rgba(255, 255, 255, 0.1); */
+    }
+  }
 `;
 
 export const Container = ({ className, style, children }) => {
@@ -68,3 +85,7 @@ export const Container = ({ className, style, children }) => {
     </ContainerBase>
   );
 };
+
+// @media screen and (min-width: 1280px) and (orientation: landscape) {
+//
+// }

@@ -27,6 +27,18 @@ const SectionBase = styled.section`
   &::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
   }
+
+  @media screen and (min-width: 769px) and (orientation: landscape) {
+    justify-content: center;
+
+    &.center {
+      width: 60%;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `;
 
 export const Section = ({ className, style, children }) => {

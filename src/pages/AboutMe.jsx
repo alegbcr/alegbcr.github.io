@@ -66,7 +66,7 @@ const AboutMe = () => {
                   </li>
                 ))}
               </List>
-              <Button classNames="contact__button" onClick={handleContact}>
+              <Button className="contact__button" onClick={handleContact}>
                 Contacto
               </Button>
             </div>

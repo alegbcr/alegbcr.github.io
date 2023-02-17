@@ -25,7 +25,7 @@ const MyTools = () => {
               <div>
                 <CardTitle>{work.title}</CardTitle>
                 <CardDescription>{work.description}</CardDescription>
-                <Button classNames="my-project">
+                <Button className="my-project">
                   {work.reference ? (
                     <a target="blank" href={work.reference}>
                       {work.buttonText}

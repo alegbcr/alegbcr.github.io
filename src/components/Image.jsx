@@ -9,4 +9,12 @@ export const Image = styled.img`
     line-height: 0;
     opacity: 0.3;
   }
+
+  @media screen and (min-width: 1280px) and (orientation: landscape) {
+    &.background {
+      object-position: center;
+      line-height: 0;
+      opacity: 0.3;
+    }
+  }
 `;

@@ -13,6 +13,14 @@ const PictureBase = styled.picture`
   &.background {
     height: 92vh;
   }
+
+  @media screen and (min-width: 1280px) and (orientation: landscape) {
+    &.background {
+      height: 80vh;
+      width: 50%;
+      margin-left: 40%;
+    }
+  }
 `;
 
 export const Picture = ({ className, children }) => {

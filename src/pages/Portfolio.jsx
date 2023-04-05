@@ -1,82 +1,125 @@
 import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 // Components
 import { Section } from "../components/Section";
 import { Container } from "../components/Container";
-import { Subtitle } from "../components/Texts";
-import {
-  CardContainer,
-  CardDescription,
-  CardTitle,
-  CardPicture,
-  CardImage,
-} from "../containers/Card";
+import { Paragraph, Subtitle, SubtitleSecondary } from "../components/Texts";
 // Custom Hooks
 import AppContext from "../context/AppContext";
+import { Image } from "../components/Image";
+import { List } from "../components/List";
+import { ItemList } from "../components/ItemList";
+// icons
+import { FaArrowRight } from "react-icons/fa";
 
 const Portfolio = () => {
   const { state } = useContext(AppContext);
+  const navigate = useNavigate();
 
   return (
     <>
-      <Section className="center">
-        <Subtitle className="subtitle">Mi Portfolio</Subtitle>
-        {/* Logos */}
-        <Container className="base">
-          <CardTitle>{state.logos.title}</CardTitle>
-          <CardDescription>{state.logos.description}</CardDescription>
-          <CardContainer className="row-scroll">
-            {state.logos.works.map((work) => {
-              return (
-                <CardImage
-                  key={work.name}
-                  src={work.image}
-                  className="logo"
-                  alt={work.name}
-                />
-              );
-            })}
-          </CardContainer>
-        </Container>
-        {/* Designs */}
-        <Container className="base">
-          <CardTitle>{state.designs.title}</CardTitle>
-          <CardDescription>{state.designs.description}</CardDescription>
-          <CardContainer className="row-scroll">
-            {state.designs.works.map((work) => {
-              return (
-                <CardImage
-                  key={work.name}
-                  src={work.image}
-                  className="logo"
-                  alt={work.name}
-                />
-              );
-            })}
-          </CardContainer>
-        </Container>
+      <Section>
+        <Subtitle className="portfolio__subtitle">Mi Portfolio</Subtitle>
         {/* Portfolio */}
-        <Container className="base">
-          <CardTitle>{state.portfolio.title}</CardTitle>
-          <CardDescription>{state.portfolio.description}</CardDescription>
-          <Container>
+        <Container className="portfolio__container--works">
+          <List className="portfolio__list">
             {state.portfolio.works.map((work) => {
               return (
-                <CardContainer key={work.id} className="card__container">
-                  <div style={{ display: "flex", alignItems: "end" }}>
-                    <div>
-                      <CardTitle>{work.company}</CardTitle>
-                      <CardDescription>{`${work.work} / ${work.profesion}`}</CardDescription>
-                    </div>
-                    <CardPicture>
-                      <CardImage
-                        src={work.image}
-                        className="logo"
-                        alt={work.name}
-                      />
-                    </CardPicture>
+                <ItemList key={work.id} className="portfolio__item-list">
+                  <div>
+                    <SubtitleSecondary>{work.company}</SubtitleSecondary>
+                    <Paragraph className="portfolio__paragraph">{`${work.work} / ${work.profesion}`}</Paragraph>
                   </div>
-                  <CardDescription>{work.description}</CardDescription>
-                </CardContainer>
+                  <Link to={`/portfolio/${work.id}`}>
+                    <FaArrowRight
+                      style={{
+                        padding: "1rem",
+                        fontSize: "1rem",
+                      }}
+                    />
+                  </Link>
+                </ItemList>
+              );
+            })}
+          </List>
+        </Container>
+
+        {/* Logos */}
+        <Container className="portfolio__container--logos">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <SubtitleSecondary>{state.logos.title}</SubtitleSecondary>
+            <span>ver más</span>
+          </div>
+          <Container className="portfolio__container-logos--items">
+            {state.logos.works.map((work) => {
+              return (
+                <picture
+                  key={work.id}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <img
+                    style={{ width: "100px" }}
+                    src={work.image}
+                    alt={work.name}
+                  />
+                </picture>
+              );
+            })}
+          </Container>
+        </Container>
+        {/* Designs */}
+        <Container className="portfolio__container--gallery">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <SubtitleSecondary>{state.designs.title}</SubtitleSecondary>
+            <span>ver más</span>
+          </div>
+          <Container
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              overflow: "hidden",
+              justifyContent: "center",
+            }}
+          >
+            {state.designs.works.map((work) => {
+              return (
+                <picture
+                  key={work.id}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    maxWidth: "100%",
+                    margin: "4px",
+                  }}
+                >
+                  <Image
+                    className={
+                      work.size
+                        ? "portfolio__design--image size"
+                        : "portfolio__design--image"
+                    }
+                    src={work.image}
+                    alt={work.name}
+                  />
+                </picture>
               );
             })}
           </Container>

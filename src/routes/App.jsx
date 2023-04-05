@@ -10,6 +10,7 @@ import { GlobalStyles } from "./GlobalStyles";
 import Menu from "../containers/Menu";
 import AboutMe from "../pages/AboutMe";
 import Portfolio from "../pages/Portfolio";
+import PortfolioDescription from "../pages/PortfolioDescription";
 import MyProjects from "../pages/MyProjects";
 import Contact from "../pages/Contact";
 
@@ -25,6 +26,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:id" element={<PortfolioDescription />} />
             <Route path="/my-projects" element={<MyProjects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

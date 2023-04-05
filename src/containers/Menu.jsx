@@ -114,7 +114,7 @@ const MenuNavigation = (props) => {
         </List>
         <List className=" menu-navigation-large">
           {props.socialMedia.map((item) => (
-            <ItemList key={item.id} className="menu-navigation-large--item">
+            <ItemList key={item.id} className="menu-navigation-large--icons">
               <Anchor
                 className="social-media"
                 target="blank"

@@ -1,30 +1,7 @@
 import styled from "styled-components";
 
 const ContainerBase = styled.div`
-  &.base {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 100%;
-    max-width: 100%;
-    padding-top: 2rem;
-  }
-
-  &.center {
-    align-items: center;
-  }
-
-  &.overlay {
-    padding-top: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding-left: 2rem;
-  }
-
+  /* MENU */
   /* Menu burger */
   &.menu__icon {
     font-size: 1.2rem;
@@ -47,6 +24,7 @@ const ContainerBase = styled.div`
 
   /* Menu navigation */
   &.menu-navigation {
+    border-bottom: 2px solid var(--black-light-color);
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -55,25 +33,140 @@ const ContainerBase = styled.div`
     align-items: center;
   }
 
-  /* Portfolio */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* ABOUT ME */
+  &.about-me__overlay {
+    position: absolute;
+    grid-column: 1 / -1;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, minmax(20px, 150px));
+  }
 
-  @media screen and (min-width: 1280px) and (orientation: landscape) {
+  &.base {
+    width: 90%;
+    grid-column: 1 /-1;
+    grid-row: 3 / 6;
+    display: flex;
+    align-items: center;
+  }
+
+  &.intro__information {
+    height: 50%;
+  }
+
+  &.about-me__container--paragraph {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    align-self: center;
+    width: 85%;
+    justify-self: center;
+  }
+
+  &.computer-skill__accordion {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  /* PORTFOLIO */
+  &.portfolio__container--works,
+  &.portfolio__container--gallery,
+  &.portfolio__container--logos {
+    grid-column: 1 /-1;
+    width: 85%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &.portfolio__container--logos {
+    justify-content: center;
+  }
+  &.portfolio__container-logos--items {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  &.portfolio__container--works {
+    grid-row: 3 / 6;
+  }
+  &.portfolio__container--logos {
+    grid-row: 6 / 8;
+  }
+  &.portfolio__container--gallery {
+    grid-row: 8 / -1;
+    margin-bottom: 1rem;
+  }
+
+  /* Transitions */
+  &.none {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.display {
+    max-height: 100%;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Tablet */
+  @media screen and (min-width: 481px) {
     &.overlay {
-      align-items: center;
-      margin-right: 20%;
+      grid-column: 2 / 8;
+      grid-row: 2 / -1;
+      height: 100%;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, minmax(88px, 160px));
     }
 
     &.base {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
+      width: 100%;
+      grid-column: 1 /-1;
+      grid-row: 4 / 7;
+    }
+
+    &.intro__information {
+      align-self: center;
+      justify-self: center;
       height: 100%;
-      max-width: 50%;
-      padding-top: 2rem;
-      /* background-color: rgba(255, 255, 255, 0.1); */
+    }
+  }
+
+  /* Laptop */
+  @media screen and (min-width: 769px) {
+    &.overlay {
+      grid-column: 2 / 12;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &.menu-navigation {
+      width: 90%;
+    }
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1024px) {
+    &.overlay {
+      grid-column: 4 / 12;
+      align-items: center;
+      justify-content: center;
+      /* margin-right: 20%; */
+    }
+
+    &.menu-navigation {
+      width: 85%;
     }
   }
 `;
@@ -85,7 +178,3 @@ export const Container = ({ className, style, children }) => {
     </ContainerBase>
   );
 };
-
-// @media screen and (min-width: 1280px) and (orientation: landscape) {
-//
-// }

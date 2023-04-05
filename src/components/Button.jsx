@@ -19,8 +19,9 @@ export const Button = styled.button`
   /* Contact */
   &.contact__button {
     display: block;
-    margin-top: 15px;
-    background-color: var(--blue-color);
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 2px solid var(--blue-light-color);
   }
 
   &:hover {

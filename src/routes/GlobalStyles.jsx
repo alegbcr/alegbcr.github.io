@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   /* VARIABLES */
   /* Palette Colors */
   --black-color: #191919;
+  --black-light-color: #2b2b2b;
   --white-color: #f0f0f0;
   --white-alpha-color: #f0f0f09a;
   --blue-color: #0a3563;
@@ -25,10 +26,11 @@ export const GlobalStyles = createGlobalStyle`
   --border-light: 2px solid var(--blue-light-color);
 
 
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Hind Siliguri',Inter, Avenir, Helvetica, Arial, sans-serif;
+  
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
   
   color-scheme: light dark;
   color: #ffffffde;
@@ -41,8 +43,11 @@ export const GlobalStyles = createGlobalStyle`
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+* {
   margin: 0;
+}
+
+body {
   padding: 0;
   min-width: 320px;
 }

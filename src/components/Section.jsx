@@ -8,11 +8,8 @@ const SectionBase = styled.section`
   overflow: hidden;
 
   /* ABOUT ME */
-  &.about-me__container {
-    height: 80vh;
-  }
-
-  &.computer-skill__container,
+  &.about-me__section,
+  &.computer-skill__section,
   &.my-experience__section,
   &.portfolio-description__section,
   &.portfolio-description__section--description {
@@ -32,7 +29,6 @@ const SectionBase = styled.section`
   &.contact__section {
     height: 100vh;
     justify-items: center;
-    grid-template-rows: repeat(10, minmax(40px, 10vh));
     align-items: center;
   }
 

@@ -59,6 +59,7 @@ export const Subtitle = styled.h2`
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     border-bottom: 1px solid white;
+    margin: 1rem 0;
   }
 
   /* PORTFOLIO */

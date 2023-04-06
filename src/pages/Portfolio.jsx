@@ -46,16 +46,7 @@ const Portfolio = () => {
 
         {/* Logos */}
         <Container className="portfolio__container--logos">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <SubtitleSecondary>{state.logos.title}</SubtitleSecondary>
-            <span>ver más</span>
-          </div>
+          <SubtitleSecondary>{state.logos.title}</SubtitleSecondary>
           <Container className="portfolio__container-logos--items">
             {state.logos.works.map((work) => {
               return (
@@ -80,21 +71,13 @@ const Portfolio = () => {
         </Container>
         {/* Designs */}
         <Container className="portfolio__container--gallery">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <SubtitleSecondary>{state.designs.title}</SubtitleSecondary>
-            <span>ver más</span>
-          </div>
+          <SubtitleSecondary>{state.designs.title}</SubtitleSecondary>
           <Container
             style={{
               display: "flex",
               flexWrap: "wrap",
               overflow: "hidden",
+              overflowY: "scroll",
               justifyContent: "center",
             }}
           >

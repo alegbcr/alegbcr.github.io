@@ -86,7 +86,7 @@ const AboutMe = () => {
       </Section>
 
       {/* About me */}
-      <Section className="about-me__container">
+      <Section className="about-me__section">
         <Subtitle className="about-me__subtitle">Un poco más sobre mí</Subtitle>
         <Container className="about-me__container--paragraph">
           {state.about.paragraphs.map((paragraph) => {
@@ -103,7 +103,7 @@ const AboutMe = () => {
       </Section>
 
       {/* Computer Skills */}
-      <Section className="computer-skill__container">
+      <Section className="computer-skill__section">
         <Subtitle className="about-me__subtitle">Computer Skills</Subtitle>
         <List className="computer-skill__list">
           {state.computerSkills.map((computerSkill, index) => {

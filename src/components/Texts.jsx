@@ -70,7 +70,7 @@ export const Subtitle = styled.h2`
     line-height: 3.5rem;
     font-size: 3rem;
     grid-column: 1 / -1;
-    grid-row: 4 / 5;
+    grid-row: 2 / 3;
     border-bottom: 1px solid white;
   }
 
@@ -80,8 +80,8 @@ export const Subtitle = styled.h2`
     align-self: center;
   }
 
-  &.portfolio__subtitle {
-    grid-row: 2 / 3;
+  &.contact__subtitle {
+    grid-row: 4 / 5;
   }
 
   /* Tablet */
@@ -149,7 +149,7 @@ export const Paragraph = styled.p`
 
   /* MY PROJECTS */
   &.project__subtitle--paragraph {
-    grid-row: 5 / 6;
+    grid-row: 3 / 4;
     text-align: start;
     width: 85%;
     justify-self: center;

@@ -37,7 +37,7 @@ const ListBase = styled.ul`
 
   &.my-project__list {
     grid-column: 1 / -1;
-    grid-row: 6 / -1;
+    grid-row: 4 / -1;
     width: 85%;
     justify-self: center;
   }

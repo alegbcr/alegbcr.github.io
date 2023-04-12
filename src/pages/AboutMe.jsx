@@ -60,7 +60,7 @@ const AboutMe = () => {
               <Title className="title__description">
                 {state.intro.description}
               </Title>
-              <h5 style={{ marginTop: "1rem" }}>
+              {/* <h5 style={{ marginTop: "1rem" }}>
                 Contactame desde mis redes sociales
               </h5>
               <List className="icon__list">
@@ -75,10 +75,10 @@ const AboutMe = () => {
                     </Anchor>
                   </li>
                 ))}
-              </List>
-              {/* <Button className="contact__button" onClick={handleNavigation}>
+              </List> */}
+              <Button className="contact__button" onClick={handleNavigation}>
                 Contacto
-              </Button> */}
+              </Button>
             </Container>
           </Container>
           <Small className="phrase">Never Give Up!!!</Small>

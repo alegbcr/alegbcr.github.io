@@ -76,7 +76,7 @@ const initialState = {
     greeting: "Hola, mi nombre es",
     name: "Alexander G.",
     description:
-      "Soy un freelance con habilidades tanto en diseño gráfico como en desarrollo web.",
+      "Soy un costarricense con habilidades tanto en diseño gráfico como en desarrollo web.",
     picture: `${photosURL}T1MBNLTt/me.png`,
     detail: "imagen de Alexander",
   },
@@ -84,53 +84,19 @@ const initialState = {
     paragraphs: [
       {
         paragraph:
-          "Como diseñador gráfico, me he especializo en la creación de contenido visual redes sociales, materiales gráficos y piezas para mi colección de arte gráfico. Estoy familiarizado con herramientas como Adobe Photoshop, Illustrator y After Effects. También tengo experiencia en el diseño de interfaces de usuario, así como en la creación de prototipos interactivos con la herramienta Figma.",
+          "Como diseñador gráfico, me he especializo en la creación de contenido visual para redes sociales, artes gráficos como también animaciones. Estoy familiarizado con herramientas como Photoshop, Illustrator y After Effects. También tengo experiencia en el diseño de interfaces de usuario, así como en la creación de prototipos interactivos con la herramienta Figma.",
       },
       {
         paragraph:
-          "Además, soy un desarrollador full-stack con React. Estoy capacitado para construir aplicaciones web completas utilizando JavaScript, HTML5, CSS3 y React. También tengo experiencia en el uso de herramientas como Node.js, Express.js y MongoDB para crear APIs robustas que se pueden utilizar en aplicaciones web modernas.",
+          "Además, soy desarrollador full-stack con el stack MERN. Estoy capacitado para construir aplicaciones web completas utilizando JavaScript, HTML5, CSS3 y React. También tengo experiencia en el uso de herramientas como Node.js, Express.js y MongoDB para crear APIs robustas que se pueden utilizar en aplicaciones web modernas.",
       },
       {
         paragraph:
-          "Actualemte, estoy explorando el mundo descentralizado de la Web3 en las Blockchain de Solidity y Solana para formar parte de este mundo tan apasionante y ayudar a seguir construyendo los nuevos ecosistemas de la web.",
+          "Actualemte, estoy explorando el mundo descentralizado de  Blockchain con Solidity para formar parte de este mundo tan apasionante, además, ayudar a seguir construyendo los nuevos ecosistemas de la web.",
       },
       {
         paragraph:
-          "Si están buscando alguien que pueda ofrecer soluciones creativas e innovadoras para sus proyectos digitales, no dude en contactarme.",
-      },
-      {
-        paragraph: "¡Estoy listo para ayudarlos!",
-      },
-    ],
-
-    books: [
-      {
-        id: 1,
-        title: "The Business Blockchain",
-        author: "William Mougayar",
-        image:
-          "https://m.media-amazon.com/images/P/B01EIGP8HG.01._SCLZZZZZZZ_SX500_.jpg",
-      },
-      {
-        id: 2,
-        title: "Psicología de las masas",
-        author: "Gustave Le Bon",
-        image:
-          "https://images-na.ssl-images-amazon.com/images/I/51CDRFFBCDL._SX331_BO1,204,203,200_.jpg",
-      },
-      {
-        id: 3,
-        title: "Designing for emotion",
-        author: "Aarron Walter",
-        image:
-          "https://images-na.ssl-images-amazon.com/images/I/31jmLLi9E1L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
-      },
-      {
-        id: 4,
-        title: "DeFi and the Future of Finance",
-        author: "Campbell R. Harvey, Ashwin Ramachandran, Joey Santoro",
-        image:
-          "https://images-na.ssl-images-amazon.com/images/I/41dKXZi614L._SX339_BO1,204,203,200_.jpg",
+          "Si están buscando alguien que pueda ofrecer soluciones creativas e innovadoras para sus proyectos digitales, no dude en contactarme. ¡Estoy listo para ayudarlos!",
       },
     ],
   },
@@ -173,6 +139,14 @@ const initialState = {
           name: "React",
           logo: "https://www.svgrepo.com/show/452092/react.svg",
         },
+        {
+          name: "Next js",
+          logo: "https://www.svgrepo.com/show/342062/next-js.svg",
+        },
+        {
+          name: "Typescript",
+          logo: "https://www.svgrepo.com/show/374146/typescript-official.svg",
+        },
         { name: "CSS", logo: "https://www.svgrepo.com/show/452185/css-3.svg" },
         { name: "Sass", logo: "https://www.svgrepo.com/show/374061/sass.svg" },
         {
@@ -204,6 +178,10 @@ const initialState = {
         {
           name: "Python",
           logo: "https://www.svgrepo.com/show/452091/python.svg",
+        },
+        {
+          name: "Solidity",
+          logo: "https://www.svgrepo.com/show/374088/solidity.svg",
         },
       ],
     },
@@ -245,13 +223,11 @@ const initialState = {
     },
   ],
   experienceTimeline: {
-    titleExperience: "Un pequeño recorrido",
     companies: [
       {
-        position: "Full Stack Developer",
+        position: "Full Stack Web Developer",
         name: "Freelance",
-        description:
-          "Diseñado Gráfico | Desarrollado Web | Consultoría Transformación Digital",
+        description: "Diseñado Gráfico | Desarrollado Web",
         years: "2021 ~",
       },
       {
@@ -273,45 +249,35 @@ const initialState = {
 
   // PORTFOLIO
   portfolio: {
-    title: "Colaboración Freelance",
-    description: "Estos son algunos de los proyectos con los que he trabajado",
     works: [
       {
         id: 1,
         company: "Estación Gourmet",
         profesion: "Diseño Gráfico",
         work: "Desarrollo web",
+        age: 2021,
+        companyLogo: `${photosURL}yxPcQ3pp/logo-estacion-gourmet.png`,
         image: `${photosURL}gjHtMgS0/estacion-gourmet.png`,
+        imageRRSS: `${photosURL}fR7H6sB6/disen-o-de-rrss-estacion-gourmet.png`,
         linkPage: "https://estaciongourmet.net/index.php",
-        description:
-          "Creación de landing page y creación de artes digitales para mostrarse en diferentes redes sociales de interes para la marca",
-        works: [
+        description: [
           {
-            name: "Landing Page Web",
-            images: [
-              {
-                id: 1,
-                image: `${photosURL}XY4mw6mf/Screen-Shot-2023-04-04-at-10-45-23-AM-min.png`,
-              },
-              {
-                id: 2,
-                image: `${photosURL}dtMzVy9S/Screen-Shot-2023-04-04-at-10-45-38-AM-min.png`,
-              },
-              {
-                id: 3,
-                image: `${photosURL}ryRBTJ5r/Screen-Shot-2023-04-04-at-10-45-59-AM-min.png`,
-              },
-              {
-                id: 4,
-                image: `${photosURL}76dj7Grh/Screen-Shot-2023-04-04-at-10-46-13-AM-min.png`,
-              },
-              {
-                id: 5,
-                image: `${photosURL}CLj9BxPM/Screen-Shot-2023-04-04-at-10-46-24-AM-min.png`,
-              },
-            ],
-            repository: "https://github.com/alegbcr/estacion-gourmet",
-            demo: "",
+            paragraph:
+              "Creación de artes digitales para compratirse en las redes sociales.",
+          },
+          {
+            paragraph:
+              "Creación de Landing Page básica para mostrar información de la marca.",
+          },
+        ],
+        links: [
+          {
+            name: "demo",
+            link: "https://alegbcr.github.io/estacion-gourmet/",
+          },
+          {
+            name: "repositorio",
+            link: "https://github.com/alegbcr/estacion-gourmet",
           },
         ],
       },
@@ -319,30 +285,32 @@ const initialState = {
         id: 2,
         company: "Dogzilla",
         profesion: "Diseño Gráfico",
-        age: "2020",
+        age: 2020,
         work: "Transformación Digital",
-        image: `${photosURL}63RmZWCn/dogzilla-design.png`,
-        description:
-          "Creación de artes y animaciones digitales para mostrarse en diferentes redes sociales de interes para la marca, además de consultoria para las mejores prácticas para la transformación digital y branding de la marca.",
+        companyLogo: `${photosURL}K4Xqvd1Q/dogzilla.png`,
+        imageRRSS: `${photosURL}63RmZWCn/dogzilla-design.png`,
+        description: [
+          {
+            paragraph:
+              "Creación de artes y animaciones digitales para mostrarse en diferentes redes sociales de interes para la marca, además de consultoria para las mejores prácticas para la transformación digital y branding de la marca.",
+          },
+        ],
+        links: null,
       },
       {
         id: 3,
         company: "Mk Innovations",
         profesion: "Diseño Gráfico",
         work: "Desarrollo web",
-        image: `${photosURL}QMvzV9Kj/mkinnovations.png`,
+        companyLogo: `${photosURL}XvRLYcnB/logo-mk.png`,
+        imageRRSS: `${photosURL}QMvzV9Kj/mkinnovations.png`,
         linkPage: "https://alegbcr.github.io/mkinnovations_page/",
-        description:
-          "Creación de piezas gráficas tanto para uso digital como para formato fisico tanto para la marca como para los diferentes clientes de la marca.",
-      },
-      {
-        id: 4,
-        company: "Mind World",
-        profesion: "Diseño Gráfico",
-        work: "Transformación Digital",
-        image: `${photosURL}HngP4qtK/mind-world.png`,
-        description:
-          "Desarrollo Javascript Full-Stack para el desarrollo de su producto digital.",
+        description: [
+          {
+            paragraph:
+              "Creación de piezas gráficas tanto para uso digital como para formato fisico tanto para la marca como para los diferentes clientes de la marca.",
+          },
+        ],
       },
     ],
   },
@@ -486,11 +454,11 @@ const initialState = {
       "Estos son algunos de mis proyectos que he realizado para aprender las tecnologias y especializarme en el stack de Javascript.",
     works: [
       {
-        title: "Generador de contraseña",
+        title: "alegbcr movies",
         description:
-          "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
-        reference: "",
-        buttonText: "Crear una contraseña",
+          "Este proyecto está construido con JS Vanilla y es para comprender la interacción con una API y en especifico con la API de MovieBD y Axios. El proyecto actualmente se encuentra con Features básicos, sin embargo aún se está trabajando en Features más avanzados para que las personas puedan tener una experiencia más amplia con ella.",
+        reference: "https://cute-ganache-d8a3b5.netlify.app/#/",
+        buttonText: "Visitar alegbcr movies",
       },
       {
         title: "Todo Machine",
@@ -500,31 +468,32 @@ const initialState = {
         buttonText: "Crear un To DO",
       },
       {
+        title: "API-REST",
+        description:
+          "Construcción de API-REST de tienda comercial con data aleatoria utilizando las tecnologías de Node.js con Express.js para el consume de endpoints. Actualmente, se sigue creciendo esta API.",
+        reference: "https://my-store-livid.vercel.app/api/v1/users",
+        buttonText: "Visitar API My Store",
+      },
+      {
+        title: "Generador de contraseña",
+        description:
+          "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+        reference: null,
+        buttonText: "Crear una contraseña",
+      },
+      {
         title: "Messenger App",
         description:
           "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
-        reference: "",
+        reference: null,
         buttonText: "Ir al Messenger App",
       },
-      {
-        title: "alegbcr movies",
-        description:
-          "Este proyecto está construido con JS Vanilla y es para comprender la interacción con una API y en especifico con la API de MovieBD y Axios. El proyecto actualmente se encuentra con Features básicos, sin embargo aún se está trabajando en Features más avanzados para que las personas puedan tener una experiencia más amplia con ella.",
-        reference: "https://cute-ganache-d8a3b5.netlify.app/#/",
-        buttonText: "Visitar alegbcr movies",
-      },
-      {
-        title: "Landing Page",
-        description:
-          "Se construyó una landing page de un Catering Service con React. Este proyecto fue pensado para motivar a los emprendedores a empezar con sus proyectos tropicalizando este proyecto.",
-        reference: "",
-        buttonText: "Estación Gourmet DEMO",
-      },
+
       {
         title: "Menu Digital",
         description:
           "Wep Application constrida con React para el frontend y Node con express para el backend. Esta aplicación es completamente funcional.",
-        reference: "",
+        reference: null,
         buttonText: "Digital Menu DEMO",
       },
     ],

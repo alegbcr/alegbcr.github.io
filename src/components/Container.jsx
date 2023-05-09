@@ -120,14 +120,10 @@ const ContainerBase = styled.div`
 
   /* Tablet */
   @media screen and (min-width: 481px) {
-    &.overlay {
-      grid-column: 2 / 8;
-      grid-row: 2 / -1;
-      height: 100%;
-      display: grid;
-      justify-items: center;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(8, minmax(88px, 160px));
+    &.about-me__overlay {
+      position: relative;
+      grid-column: 2 / -1;
+      grid-row: 1 / -1;
     }
 
     &.base {
@@ -158,15 +154,29 @@ const ContainerBase = styled.div`
 
   /* Desktop */
   @media screen and (min-width: 1024px) {
-    &.overlay {
-      grid-column: 4 / 12;
-      align-items: center;
-      justify-content: center;
-      /* margin-right: 20%; */
+    &.about-me__overlay {
+      position: relative;
+      grid-column: 3 / -1;
+      grid-row: 1 / -1;
     }
 
-    &.menu-navigation {
+    &.about-me__container--paragraph {
+      grid-row: 5 / -1;
+      grid-column: 4 / 12;
+      align-self: center;
       width: 85%;
+      justify-self: center;
+    }
+
+    &.portfolio__container--works,
+    &.portfolio__container--gallery,
+    &.portfolio__container--logos {
+      grid-column: 1 /-1;
+      width: 85%;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
     }
   }
 `;

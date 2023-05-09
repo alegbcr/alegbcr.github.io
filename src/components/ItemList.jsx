@@ -12,6 +12,7 @@ export const ItemList = styled.li`
 
   &.menu-navigation-large--icons {
     margin: 0 0.6rem;
+    display: flex;
   }
 
   /* ABOUT ME */

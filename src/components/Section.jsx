@@ -55,6 +55,7 @@ const SectionBase = styled.section`
   @media screen and (min-width: 769px) {
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, minmax(40px, 10vh));
 
     &.container {
       padding: 1rem 0;

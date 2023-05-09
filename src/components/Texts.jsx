@@ -93,11 +93,6 @@ export const Subtitle = styled.h2`
       font-family: "Hind Siliguri";
       line-height: 4rem;
     }
-
-    &.subtitle {
-      text-align: start;
-      grid-column: 2 / 8;
-    }
   }
 
   /* Laptop */
@@ -105,24 +100,29 @@ export const Subtitle = styled.h2`
     &.title__greeting {
       font-size: 6rem;
     }
-    &.subtitle {
-      text-align: start;
-      margin-top: 50px;
-      grid-column: 3 / 7;
-    }
   }
 
   /* Desktop */
   @media screen and (min-width: 1024px) {
-    &.subtitle {
-      text-align: start;
-      margin-top: 50px;
-      grid-column: 3 / 8;
+    &.about-me__subtitle {
+      width: 85%;
+      font-size: 2.5rem;
+      grid-column: 2 / 7;
+      grid-row: 2 / 5;
+      border-bottom: none;
+      margin: 2rem 0 0 0;
     }
-  }
 
-  /* HD */
-  @media screen and (min-width: 1202px) {
+    &.portfolio__subtitle,
+    &.projects__subtitle,
+    &.contact__subtitle {
+      width: 85%;
+      line-height: 3.5rem;
+      font-size: 3rem;
+      grid-column: 2/ 7;
+      grid-row: 2 / 3;
+      border-bottom: none;
+    }
   }
 `;
 
@@ -177,6 +177,9 @@ export const Paragraph = styled.p`
   /* Desktop */
   @media screen and (min-width: 1024px) {
     grid-column: 3 /11;
+    &.about-me__paragraph {
+      text-align: start;
+    }
   }
 `;
 

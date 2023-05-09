@@ -20,13 +20,13 @@ const Menu = () => {
   return (
     <>
       <Nav>
-        {widthSize <= 768 && (
+        {widthSize <= 800 && (
           <MenuBurger
             logo={state.info.logo}
             categories={state.info.categories}
           />
         )}
-        {widthSize >= 769 && (
+        {widthSize >= 801 && (
           <MenuNavigation
             logo={state.info.logo}
             categories={state.info.categories}
@@ -83,6 +83,12 @@ const MenuList = (props) => {
             </NavLink>
           </ItemList>
         ))}
+        <Anchor
+          className="cv__anchor"
+          href="https://drive.google.com/file/d/1rBDJo4So8n0hovsZ2IDbvdBprXw05-uA/view?usp=share_link"
+        >
+          Mi CV
+        </Anchor>
       </List>
       <Small className="menu-phrase">Stay up until the Sun rises</Small>
     </Container>
@@ -116,6 +122,12 @@ const MenuNavigation = (props) => {
           {props.socialMedia.map((item) => (
             <ItemList key={item.id} className="menu-navigation-large--icons">
               <Anchor
+                style={{
+                  display: "flex",
+                  alignSelf: "center",
+                  justifySelf: "center",
+                  padding: ".3rem",
+                }}
                 className="social-media"
                 target="blank"
                 href={item.reference}
@@ -124,6 +136,12 @@ const MenuNavigation = (props) => {
               </Anchor>
             </ItemList>
           ))}
+          <Anchor
+            className="cv__anchor"
+            href="https://drive.google.com/file/d/1XrbycOZOUoZn3x3YTMRI4ofOp7SL75es/view?usp=share_link"
+          >
+            Mi CV
+          </Anchor>
         </List>
       </Container>
     </>

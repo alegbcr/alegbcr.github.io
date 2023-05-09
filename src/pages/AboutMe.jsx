@@ -60,22 +60,6 @@ const AboutMe = () => {
               <Title className="title__description">
                 {state.intro.description}
               </Title>
-              {/* <h5 style={{ marginTop: "1rem" }}>
-                Contactame desde mis redes sociales
-              </h5>
-              <List className="icon__list">
-                {state.info.socialMedia.map((item) => (
-                  <li key={item.id}>
-                    <Anchor
-                      className="icon"
-                      target="blank"
-                      href={item.reference}
-                    >
-                      {item.iconName}
-                    </Anchor>
-                  </li>
-                ))}
-              </List> */}
               <Button className="contact__button" onClick={handleNavigation}>
                 Contacto
               </Button>

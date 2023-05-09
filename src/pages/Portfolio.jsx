@@ -14,12 +14,12 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Portfolio = () => {
   const { state } = useContext(AppContext);
-  const navigate = useNavigate();
 
   return (
     <>
       <Section>
         <Subtitle className="portfolio__subtitle">Mi Portfolio</Subtitle>
+
         {/* Portfolio */}
         <Container className="portfolio__container--works">
           <List className="portfolio__list">

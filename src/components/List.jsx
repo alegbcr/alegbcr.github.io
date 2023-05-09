@@ -16,6 +16,7 @@ const ListBase = styled.ul`
 
   &.menu-navigation-large {
     display: flex;
+    align-self: center;
   }
 
   /* ABOUT ME */
@@ -53,6 +54,16 @@ const ListBase = styled.ul`
   @media screen and (min-width: 769px) {
     &.icon__list {
       display: none;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    &.computer-skill__list,
+    &.my-experience__list {
+      grid-column: 4 / 12;
+      grid-row: 5 / -1;
+      width: 85%;
+      margin-top: 1.5rem;
+      justify-self: center;
     }
   }
 `;

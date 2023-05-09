@@ -85,7 +85,7 @@ const MenuList = (props) => {
         ))}
         <Anchor
           className="cv__anchor"
-          href="https://drive.google.com/file/d/1rBDJo4So8n0hovsZ2IDbvdBprXw05-uA/view?usp=share_link"
+          href="https://drive.google.com/file/d/1XrbycOZOUoZn3x3YTMRI4ofOp7SL75es/view"
         >
           Mi CV
         </Anchor>

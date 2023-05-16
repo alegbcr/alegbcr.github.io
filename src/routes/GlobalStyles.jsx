@@ -31,6 +31,7 @@ export const GlobalStyles = createGlobalStyle`
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
+
   
   color-scheme: light dark;
   color: #ffffffde;
@@ -50,6 +51,15 @@ export const GlobalStyles = createGlobalStyle`
 body {
   padding: 0;
   min-width: 320px;
+
+    /* hide scrollbar but allow scrolling */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 }
 
 ul {

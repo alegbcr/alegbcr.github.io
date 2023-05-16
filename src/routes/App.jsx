@@ -8,7 +8,7 @@ import { GlobalStyles } from "./GlobalStyles";
 
 // Pages
 import Menu from "../containers/Menu";
-import AboutMe from "../pages/AboutMe";
+import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import PortfolioDescription from "../pages/PortfolioDescription";
 import MyProjects from "../pages/MyProjects";
@@ -24,7 +24,7 @@ const App = () => {
           <GlobalStyles />
           <Menu />
           <Routes>
-            <Route path="/" element={<AboutMe />} />
+            <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/:id" element={<PortfolioDescription />} />
             <Route path="/my-projects" element={<MyProjects />} />

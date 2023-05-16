@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+// Custom Hooks
+import useWindowSize from "./useWindowSize";
+
 // URL images from postimage
 const photosURL = "https://i.postimg.cc/";
 // Icons
@@ -12,8 +15,6 @@ import {
 
 // Logo Branding
 import logo from "../../public/imagotipo.svg";
-
-import useWindowSize from "./useWindowSize";
 
 const initialState = {
   // MENU
@@ -65,7 +66,7 @@ const initialState = {
       },
       {
         id: 5,
-        reference: "https://www.instagram.com/alegbcr/",
+        reference: "https://www.instagram.com/alexgbcr.dev/",
         iconName: <FaInstagram />,
       },
     ],
@@ -501,8 +502,9 @@ const initialState = {
 };
 
 const useInitialState = () => {
-  const widthSize = useWindowSize();
   const [state, setState] = useState(initialState);
+  const widthSize = useWindowSize();
+
   return { state, widthSize };
 };
 

@@ -1,16 +1,21 @@
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+
 // Custom hooks
-import AppContext from "../context/AppContext";
+import AppContext from "../../context/AppContext";
+
 // Components
-import { Image } from "../components/Image";
-import { Nav } from "../components/Nav";
-import { Picture } from "../components/Picture";
-import { Container } from "../components/Container";
-import { List } from "../components/List";
-import { ItemList } from "../components/ItemList";
-import { Small } from "../components/Small";
-import { Anchor } from "../components/Anchor";
+import {
+  Nav,
+  Container,
+  Picture,
+  Image,
+  List,
+  ItemList,
+  Anchor,
+  Small,
+} from "../../containers/Menu/Menu";
+
 // Icons
 import { FaAlignRight, FaTimes } from "react-icons/fa";
 

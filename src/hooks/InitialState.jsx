@@ -456,44 +456,104 @@ const initialState = {
     works: [
       {
         title: "alegbcr movies",
-        description:
-          "Este proyecto está construido con JS Vanilla y es para comprender la interacción con una API y en especifico con la API de MovieBD y Axios. El proyecto actualmente se encuentra con Features básicos, sin embargo aún se está trabajando en Features más avanzados para que las personas puedan tener una experiencia más amplia con ella.",
+        description: [
+          {
+            id: 1,
+            paragraph:
+              "Este proyecto fue construido con React para comprender la interacción con una API-REST con la API de MovieBD y Axios.",
+          },
+          {
+            id: 2,
+            paragraph:
+              "El proyecto actualmente se encuentra con carácteristicas básicos, sin embargo, aún se estoy trabajando en carácteristicas más avanzados para que las personas puedan tener una experiencia más amplia con ella.",
+          },
+          {
+            id: 3,
+            paragraph:
+              "Este proyecto está pensado para un mejorar la interfaces y la experiencia de usuario.",
+          },
+        ],
+
         reference: "https://cute-ganache-d8a3b5.netlify.app/#/",
         buttonText: "Visitar alegbcr movies",
       },
       {
         title: "Todo Machine",
-        description:
-          "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+        description: [
+          {
+            id: 1,
+            paragraph:
+              "Todo Machine es un proyecto constrido con React para crear un TO DOs o una listas de tareas.",
+          },
+          {
+            id: 2,
+            paragraph:
+              "Cada TO DO o tarea es almacenada en el localStorage de los dispositivos y se sincroniza en cada conexión, además es una WEB-APP que puedes instalar en tu dispositivo sin necesidad de Play Store.",
+          },
+          {
+            id: 3,
+            paragraph:
+              "Tomando en cuenta que la privacidad es importante, TODO Machine no almacena ningún dato de los usuarios.",
+          },
+        ],
         reference: "https://alegbcr.github.io/todo-machine/#/",
         buttonText: "Crear un To DO",
       },
       {
-        title: "API-REST",
-        description:
-          "Construcción de API-REST de tienda comercial con data aleatoria utilizando las tecnologías de Node.js con Express.js para el consume de endpoints. Actualmente, se sigue creciendo esta API.",
+        title: "My Restaurant API-REST",
+        description: [
+          {
+            id: 1,
+            paragraph:
+              "My Restaurant es una API que está pensada en ser consumida para aquellos desarrolladores que desean crear productos digitales para restaurantes.",
+          },
+          {
+            id: 2,
+            paragraph:
+              "Las tecnologías que se están empleando son Node.js con Express.js, además, Docker, PostgreSQL como base de datos.",
+          },
+          {
+            id: 3,
+            paragraph: "Actualmente, aún está siendo contruida.",
+          },
+        ],
         reference: "https://my-store-livid.vercel.app/api/v1/users",
         buttonText: "Visitar API My Store",
       },
       {
         title: "Generador de contraseña",
-        description:
-          "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+        description: [
+          {
+            id: 1,
+            paragraph:
+              "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+          },
+        ],
         reference: null,
         buttonText: "Crear una contraseña",
       },
       {
         title: "Messenger App",
-        description:
-          "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+        description: [
+          {
+            id: 1,
+            paragraph:
+              "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+          },
+        ],
         reference: null,
         buttonText: "Ir al Messenger App",
       },
 
       {
         title: "Menu Digital",
-        description:
-          "Wep Application constrida con React para el frontend y Node con express para el backend. Esta aplicación es completamente funcional.",
+        description: [
+          {
+            id: 1,
+            paragraph:
+              "Este proyecto está construido en React que permite crear contraseñas aletorimente. Guarda las contraseñas en la memoria de tu dispositivo.",
+          },
+        ],
         reference: null,
         buttonText: "Digital Menu DEMO",
       },

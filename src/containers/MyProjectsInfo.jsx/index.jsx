@@ -32,36 +32,47 @@ const MyProjectsInfo = (props) => {
       <List className="my-project__list">
         {props.works.map((work, index) => {
           return (
-            <ItemList key={work.title}>
-              <Container
-                className="my-project__items--title"
-                onClick={() => handleToggle(index)}
-                key={index}
-              >
-                <h3 style={{ margin: "8px" }}>{work.title}</h3>
-                {clicked === index ? (
-                  <FaMinus style={{ margin: "8px 10px" }} />
-                ) : (
-                  <FaPlus style={{ margin: "8px 10px" }} />
-                )}
-              </Container>
+            <>
+              {work.reference ? (
+                <ItemList key={work.title}>
+                  <Container
+                    className="my-project__items--title"
+                    onClick={() => handleToggle(index)}
+                    key={index}
+                  >
+                    <h3 style={{ margin: "8px" }}>{work.title}</h3>
+                    {clicked === index ? (
+                      <FaMinus style={{ margin: "8px 10px" }} />
+                    ) : (
+                      <FaPlus style={{ margin: "8px 10px" }} />
+                    )}
+                  </Container>
 
-              <Container className={clicked === index ? "display" : "none"}>
-                <Paragraph style={{ width: "90%", margin: "0 auto" }}>
-                  {work.description}
-                </Paragraph>
-                <Button>
-                  {work.reference ? (
-                    <a target="blank" href={work.reference}>
-                      {work.buttonText}
-                    </a>
-                  ) : (
-                    work.buttonText
-                  )}
-                  <FaArrowRight style={{ marginLeft: "10px" }} />
-                </Button>
-              </Container>
-            </ItemList>
+                  <Container className={clicked === index ? "display" : "none"}>
+                    {work.description.map((item) => {
+                      return (
+                        <Paragraph
+                          key={item.id}
+                          style={{ width: "90%", margin: "0 auto" }}
+                        >
+                          {item.paragraph}
+                        </Paragraph>
+                      );
+                    })}
+                    <Button>
+                      {work.reference ? (
+                        <a target="blank" href={work.reference}>
+                          {work.buttonText}
+                        </a>
+                      ) : (
+                        work.buttonText
+                      )}
+                      <FaArrowRight style={{ marginLeft: "10px" }} />
+                    </Button>
+                  </Container>
+                </ItemList>
+              ) : null}
+            </>
           );
         })}
       </List>

@@ -517,7 +517,7 @@ const initialState = {
             paragraph: "Actualmente, aún está siendo contruida.",
           },
         ],
-        reference: "https://my-store-livid.vercel.app/api/v1/users",
+        reference: "https://my-store-blue.vercel.app/",
         buttonText: "Visitar API My Store",
       },
       {

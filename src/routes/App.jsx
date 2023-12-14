@@ -3,15 +3,12 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import useInitialState from "../hooks/InitialState";
 import AppContext from "../context/AppContext";
 
-// Style Components
-import { GlobalStyles } from "./GlobalStyles";
-
 // Pages
 import Menu from "../containers/Menu";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
-import PortfolioDescription from "../pages/PortfolioDescription";
-import MyProjects from "../pages/MyProjects";
+import PortfolioWorks from "../pages/PortfolioWorks";
+import PortfolioMyProjects from "../pages/PortfolioMyProjects";
 import Contact from "../pages/Contact";
 
 const App = () => {
@@ -21,13 +18,15 @@ const App = () => {
     <>
       <AppContext.Provider value={initialState}>
         <HashRouter>
-          <GlobalStyles />
           <Menu />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/portfolio/:id" element={<PortfolioDescription />} />
-            <Route path="/my-projects" element={<MyProjects />} />
+            <Route path="/portfolio/works/:id" element={<PortfolioWorks />} />
+            <Route
+              path="/portfolio/my-projects/:id"
+              element={<PortfolioMyProjects />}
+            />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </HashRouter>

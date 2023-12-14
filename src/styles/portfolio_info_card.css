@@ -1,0 +1,107 @@
+.portfolio_info_card__container {
+  height: fit-content;
+  width: 100%;
+  border-bottom: 1px solid var(--blue-light-color);
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio_info_card__container .portfolio_info_card__image--container {
+  max-width: 100%;
+  background-color: var(--black-light-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.portfolio_info_card__container
+  .portfolio_info_card__image--container
+  .portfolio_info_card__image--image {
+  padding: 0.5rem;
+  width: 100%;
+  filter: drop-shadow(0 12px 4px var(--black-color));
+}
+
+.portfolio_info_card__container .portfolio_info_card__information--container {
+  margin-top: 1rem;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.portfolio_info_card__container
+  .portfolio_info_card__information--container
+  .portfolio_info_card__information--title {
+  font-size: var(--font-paragraph);
+  margin-bottom: 0.5rem;
+}
+
+.portfolio_info_card__container
+  .portfolio_info_card__information--container
+  .portfolio_info_card__information--company-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio_info_card__container
+  .portfolio_info_card__information--container
+  .portfolio_info_card__information--company-container
+  .portfolio_info_card__information--company-paragraph {
+  width: 35%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio_info_card__container {
+    flex-direction: row-reverse;
+  }
+
+  .portfolio_info_card__container .portfolio_info_card__image--container {
+    width: 80%;
+    background-color: transparent;
+    border-radius: var(--border-radius);
+  }
+
+  .portfolio_info_card__container
+    .portfolio_info_card__image--container
+    .portfolio_info_card__image--image {
+    max-width: 100%;
+  }
+
+  .portfolio_info_card__container .portfolio_info_card__information--container {
+    margin-top: 1rem;
+    width: 80%;
+    align-self: center;
+  }
+
+  .portfolio_info_card__container
+    .portfolio_info_card__information--container
+    .portfolio_info_card__information--title {
+    font-size: var(--font-paragraph);
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio_info_card__container
+    .portfolio_info_card__information--container
+    .portfolio_info_card__information--company-container
+    .portfolio_info_card__information--company-paragraph {
+    font-size: var(--font-small-paragraph);
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio_info_card__container
+    .portfolio_info_card__information--container
+    .portfolio_info_card__information--title {
+    font-size: var(--font-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio_info_card__container
+    .portfolio_info_card__information--container
+    .portfolio_info_card__information--company-container
+    .portfolio_info_card__information--company-paragraph {
+    font-size: var(--font-paragraph);
+  }
+}

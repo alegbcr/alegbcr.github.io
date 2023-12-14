@@ -1,0 +1,169 @@
+.portfolio_menu__container {
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.portfolio_menu__container .portfolio_menu__item {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-small-paragraph);
+  cursor: pointer;
+}
+
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, minmax(5px, 9vh));
+}
+
+.portfolio__container .portfolio_projects__title--works,
+.portfolio__container .portfolio_projects__title--projects,
+.portfolio__container .portfolio_projects__title--logos {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  width: 85%;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.portfolio__container .portfolio_projects__title--projects {
+  grid-row: 6 / 7;
+}
+
+.portfolio__container .portfolio_projects__container--works,
+.portfolio__container .portfolio_projects__container--my-projects,
+.portfolio__container .portfolio_projects__container--logos,
+.portfolio__container .portfolio_projects__container--my-arts {
+  grid-column: 1 / -1;
+  grid-row: 2 / 6;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__container .portfolio_projects__container--my-projects,
+.portfolio__container .portfolio_projects__container--my-arts {
+  grid-row: 7 / -1;
+}
+
+.portfolio__container
+  .portfolio_projects__container--works
+  .portfolio_projects__list--works,
+.portfolio__container
+  .portfolio_projects__container--my-projects
+  .portfolio_projects__list--my-projects,
+.portfolio__container
+  .portfolio_projects__container--logos
+  .portfolio_projects__list--logos,
+.portfolio__container
+  .portfolio_projects__container--my-arts
+  .portfolio_projects__list--my-arts {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio_menu__container {
+    height: 6vh;
+  }
+
+  .portfolio_menu__container .portfolio_menu__item {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, minmax(5px, 8.8vh));
+  }
+
+  .portfolio__container .portfolio_projects__title--works,
+  .portfolio__container .portfolio_projects__title--projects,
+  .portfolio__container .portfolio_projects__title--logos {
+    grid-column: 2 / 8;
+    grid-row: 1 / 2;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  .portfolio__container .portfolio_projects__title--projects {
+    grid-row: 6 / 7;
+  }
+
+  .portfolio__container .portfolio_projects__container--works,
+  .portfolio__container .portfolio_projects__container--my-projects,
+  .portfolio__container .portfolio_projects__container--logos,
+  .portfolio__container .portfolio_projects__container--my-arts {
+    grid-column: 2 / 8;
+    grid-row: 2 / 6;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio__container .portfolio_projects__container--my-projects,
+  .portfolio__container .portfolio_projects__container--my-arts {
+    grid-row: 7 / -1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio_menu__container {
+    height: 6vh;
+  }
+
+  .portfolio_menu__container .portfolio_menu__item {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, minmax(5px, 8.8vh));
+  }
+
+  .portfolio__container .portfolio_projects__title--works,
+  .portfolio__container .portfolio_projects__title--projects,
+  .portfolio__container .portfolio_projects__title--logos {
+    grid-column: 2 / 8;
+    grid-row: 1 / 2;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  .portfolio__container .portfolio_projects__title--projects {
+    grid-row: 6 / 7;
+  }
+
+  .portfolio__container .portfolio_projects__container--works,
+  .portfolio__container .portfolio_projects__container--my-projects,
+  .portfolio__container .portfolio_projects__container--logos,
+  .portfolio__container .portfolio_projects__container--my-arts {
+    grid-column: 2 / 8;
+    grid-row: 2 / 6;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio__container .portfolio_projects__container--my-projects,
+  .portfolio__container .portfolio_projects__container--my-arts {
+    grid-row: 7 / -1;
+  }
+}

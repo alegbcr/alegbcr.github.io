@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* VARIABLES */
+  /* Palette Colors */
+  --black-color: #191919;
+  --black-light-color: #2b2b2b;
+  --white-color: #f0f0f0;
+  --white-alpha-color: #f0f0f09a;
+  --blue-color: #0a3563;
+  --blue-light-color: #3074bd;
+  --blue-transparent: #1b376164;
+  --gray-color: #1f1f1f;
+  --test: rgba(255, 255, 0, 0.219);
+
+  /* Fonts */
+  --font-name: 14rem;
+  --font-name-mobile: 10rem;
+  --font-primary: 2.4rem;
+  --font-secondary: 2rem;
+  --font-paragraph: 1.5rem;
+  --font-small-paragraph: 1rem;
+
+  --font-title: 3.5rem;
+  --font-subtitle: 1.5rem;
+  --font-description: 12px;
+
+  /* Fonts Weights */
+  --font-slim: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Borders */
+  --border-radius: 10px;
+  --border-light: 2px solid var(--blue-light-color);
+
+  font-family: "Hind Siliguri", Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: var(--black-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: 0;
+  min-width: 320px;
+
+  /* hide scrollbar but allow scrolling */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+h2 {
+  color: var(--blue-light-color);
+  line-height: 3rem;
+  font-size: var(--font-paragraph);
+  font-weight: var(--font-semibold);
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, minmax(20px, auto));
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  /* max-height: 100%;
+  opacity: 1; */
+  animation: active 0.5s ease-in-out;
+}
+
+.non-active {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  animation: non-active 0.5s ease-in;
+}
+
+.fade {
+  animation: fade 0.5s ease-out;
+}
+
+@keyframes active {
+  0% {
+    opacity: 0;
+    max-height: 0;
+  }
+  50% {
+    opacity: 0.2;
+    max-height: 75%;
+  }
+  100% {
+    opacity: 1;
+    max-height: 100%;
+  }
+}
+
+@keyframes non-active {
+  0% {
+    opacity: 1;
+    max-height: 100%;
+  }
+  50% {
+    opacity: 0.8;
+    max-height: 75%;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

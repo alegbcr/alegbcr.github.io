@@ -1,0 +1,96 @@
+.about-me__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, minmax(20px, auto));
+  padding: 2rem 0;
+  place-content: center;
+  place-items: center;
+}
+
+.about-me__container .paragraph-1 {
+  font-size: var(--font-paragraph);
+  grid-column: 1 / -1;
+  grid-row: 2 / 4;
+  width: 85%;
+  margin: 0;
+}
+
+.about-me__container .paragraph-2 {
+  font-size: var(--font-small-paragraph);
+  grid-column: 1 / -1;
+  grid-row: 6 / 8;
+  width: 85%;
+  margin: 0;
+}
+
+.about-me__container .about-me__button {
+  grid-column: 3 / -1;
+  grid-row: 9 / 10;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about-me__container .paragraph-2 + .paragraph-3,
+.about-me__container .paragraph-3 + .paragraph-4,
+.about-me__container .paragraph-4 + .paragraph-5,
+.about-me__container .paragraph-5 + .paragraph-6 {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .about-me__container {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, minmax(25px, auto));
+  }
+
+  .about-me__container .paragraph-1 {
+    font-size: var(--font-secondary);
+    line-height: 1.1;
+    grid-column: 1 / 6;
+    grid-row: 3 / 6;
+    width: 85%;
+    margin: 0;
+  }
+
+  .about-me__container .paragraph-2 {
+    font-size: var(--font-small-paragraph);
+    grid-column: 6 / 8;
+    grid-row: 3 / 6;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-me__container .about-me__button {
+    grid-column: 6 / 8;
+    grid-row: 9 / 10;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me__container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, minmax(35px, auto));
+  }
+
+  .about-me__container .paragraph-1 {
+    grid-column: 3 / 8;
+    grid-row: 3 / 6;
+  }
+
+  .about-me__container .paragraph-2 {
+    font-size: var(--font-small-paragraph);
+    grid-column: 8 / 10;
+    grid-row: 3 / 6;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-me__container .about-me__button {
+    grid-column: 8 / 10;
+    grid-row: 9 / 10;
+    width: 75%;
+    margin: 0 auto;
+  }
+}

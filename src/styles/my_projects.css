@@ -1,0 +1,118 @@
+.my_projects__container {
+  width: 330px;
+  height: 320px;
+  /* border-bottom: 1px solid var(--blue-light-color); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.my_projects__container .my_projects__image--container {
+  max-width: 100%;
+  height: 180px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-light-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.my_projects__container
+  .my_projects__image--container
+  .my_projects__image--image {
+  padding: 0.5rem;
+  width: 300px;
+  filter: drop-shadow(0 12px 4px var(--black-color));
+}
+
+.my_projects__container
+  .my_projects__image--container
+  .my_projects__image--image-arts {
+  width: 210px;
+}
+
+.my_projects__container .my_projects__information--container {
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.my_projects__container
+  .my_projects__information--container
+  .my_projects__information--title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  /* width: 90%; */
+}
+
+.my_projects__container
+  .my_projects__information--container
+  .my_projects__information--company-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my_projects__container
+  .my_projects__information--container
+  .my_projects__information--company-container
+  .my_projects__information--company-paragraph {
+  width: 50%;
+}
+/* @media screen and (min-width: 768px) {
+  .my_projects__container {
+    flex-direction: row-reverse;
+  }
+
+  .my_projects__container .my_projects__image--container {
+    width: 80%;
+    background-color: transparent;
+    border-radius: var(--border-radius);
+  }
+
+  .my_projects__container
+    .my_projects__image--container
+    .my_projects__image--image {
+    max-width: 100%;
+  }
+
+  .my_projects__container .my_projects__information--container {
+    margin-top: 1rem;
+    width: 80%;
+    align-self: center;
+  }
+
+  .my_projects__container
+    .my_projects__information--container
+    .my_projects__information--title {
+    font-size: var(--font-paragraph);
+    margin-bottom: 0.5rem;
+  }
+
+  .my_projects__container
+    .my_projects__information--container
+    .my_projects__information--company-container
+    .my_projects__information--company-paragraph {
+    font-size: var(--font-small-paragraph);
+    width: 45%;
+  }
+} */
+
+/* @media screen and (min-width: 1024px) {
+  .my_projects__container
+    .my_projects__information--container
+    .my_projects__information--title {
+    font-size: var(--font-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .my_projects__container
+    .my_projects__information--container
+    .my_projects__information--company-container
+    .my_projects__information--company-paragraph {
+    font-size: var(--font-paragraph);
+  }
+} */

@@ -1,3 +1,12 @@
+.my_projects_description__main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, minmax(40px, 9.4vh));
+  overflow: hidden;
+  overflow-y: scroll;
+  place-items: center;
+}
+
 .my_projects_description__main-container
   .my_projects_description__title--container {
   grid-column: 1 / -1;

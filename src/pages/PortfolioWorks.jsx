@@ -26,37 +26,41 @@ const PortfolioWorks = () => {
       </div>
 
       <div className="portfolio_description__content--container">
-        {project.descriptionRRSS && (
-          <p className="portfolio_description__text--rrss">
-            {project.descriptionRRSS}
-          </p>
-        )}
+        <div>
+          {project.descriptionRRSS && (
+            <p className="portfolio_description__text--rrss">
+              {project.descriptionRRSS}
+            </p>
+          )}
 
-        {project.imageRRSS && (
-          <picture className="portfolio_description__image-rrss--container">
-            <img src={project.imageRRSS} alt="" />
-          </picture>
-        )}
+          {project.imageRRSS && (
+            <picture className="portfolio_description__image-rrss--container">
+              <img src={project.imageRRSS} alt="" />
+            </picture>
+          )}
+        </div>
 
-        {project.descriptionWeb && (
-          <p className="portfolio_description__text--web">
-            {project.descriptionWeb}
-          </p>
-        )}
+        <div>
+          {project.descriptionWeb && (
+            <p className="portfolio_description__text--web">
+              {project.descriptionWeb}
+            </p>
+          )}
 
-        {project.image && (
-          <picture className="portfolio_description__image-project--container">
-            <img src={project.image} alt="" />
-          </picture>
-        )}
+          {project.image && (
+            <picture className="portfolio_description__image-project--container">
+              <img src={project.image} alt="" />
+            </picture>
+          )}
 
-        {project.links && (
-          <div className="portfolio_description__buttons--container">
-            {project.links.map((link, index) => {
-              return <Button key={index} text={link.name} link={link.link} />;
-            })}
-          </div>
-        )}
+          {project.links && (
+            <div className="portfolio_description__buttons--container">
+              {project.links.map((link, index) => {
+                return <Button key={index} text={link.name} link={link.link} />;
+              })}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../styles/about_me.css";
-import { Button } from "../components/Button";
+// import { Button } from "../components/Button";
 
 export const AboutMe = ({ title, paragraphs }) => {
   return (
@@ -16,7 +16,7 @@ export const AboutMe = ({ title, paragraphs }) => {
         );
       })}
 
-      <Button text="Sobre mí" className={"about-me__button"} link="/about-me" />
+      {/* <Button text="Sobre mí" className={"about-me__button"} link="/about-me" /> */}
     </div>
   );
 };

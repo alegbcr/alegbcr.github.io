@@ -5,14 +5,15 @@
 :root {
   /* VARIABLES */
   /* Palette Colors */
-  --black-color: #191919;
+  --black-color: #1A1A1A;
   --black-light-color: #2b2b2b;
   --white-color: #f0f0f0;
   --white-alpha-color: #f0f0f09a;
-  --blue-color: #0a3563;
-  --blue-light-color: #3074bd;
+  --blue-color: #3D5A80;
+  --blue-light-color: #98C1D9;
   --blue-transparent: #1b376164;
   --gray-color: #1f1f1f;
+  --orange-color: #EE6C4D;
   --test: rgba(255, 255, 0, 0.219);
 
   /* Fonts */

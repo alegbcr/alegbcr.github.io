@@ -1,36 +1,13 @@
-.intro__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(10, minmax(40px, 9.4vh));
-  overflow: hidden;
-}
 
-.intro__container .image__container {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
 
-.intro__container .image__container .image__container--image {
-  grid-column: 1 / -1;
-  object-fit: cover;
-  height: 100%;
-  width: auto;
-  opacity: 0.4;
-  line-height: 0;
-  filter: drop-shadow(4px 0 8px var(--black-color));
-}
-
-.intro__container .overlay_main__container {
+/* .intro__container .overlay_main__container {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, minmax(20px, 10vh));
   z-index: 10;
-}
+} */
 
 .overlay_main__container .overlay_name__container {
   grid-column: 1 / -1;

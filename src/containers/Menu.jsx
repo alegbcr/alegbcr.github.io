@@ -1,15 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 // Custom hooks
 import AppContext from "../context/AppContext";
 // Components
-import { Button } from "../components/Button";
+import {Link, Button, Image} from "@nextui-org/react";
 // Icons
-import { BsXLg } from "react-icons/bs";
 import { FaAlignJustify, FaAlignCenter } from "react-icons/fa6";
-// styles
-import "../styles/menu.css";
+
 
 const Menu = () => {
   const { state, widthSize, isOpen, setIsOpen } = useContext(AppContext);
@@ -24,11 +22,11 @@ const Menu = () => {
   };
 
   return (
-    <nav className="container h-[6vh] bg-black-color sticky top-0 z-20 mx-auto flex items-center justify-between">
+    <nav className="container h-[6vh] mx-auto flex items-center justify-between">
       {/* Desktop */}
-      <div className="desktop__container w-full flex justify-between">
-        <picture className="navigation_container--logo" onClick={handleHome}>
-          <img src={state.info.logo} alt="logo" />
+      <div className="flex items-center justify-between w-full">
+        <picture className="flex h-full ml-5" onClick={handleHome}>
+          <Image src={state.info.logo} width={100} alt="logo" />
         </picture>
         <ul
           className={`flex gap-4 justify-center items-center ${
@@ -41,7 +39,7 @@ const Menu = () => {
                 to={category.path}
                 style={({ isActive }) => ({
                   color: isActive
-                    ? "var(--blue-light-color)"
+                    ? "var(--orange-color)"
                     : "var(--white-color)",
                 })}
               >
@@ -50,37 +48,38 @@ const Menu = () => {
             </li>
           ))}
         </ul>
-        <div className={`flex items-center ${widthSize <= 767 && "hidden"}`}>
+        <div className={`flex items-center mr-5 ${widthSize <= 767 && "hidden"}`}>
           <Button
-            classStyles="cv_button"
-            text="Resume"
+            variant="bordered"
+            className='border-blue-light-color text-blue-light-color hover:bg-blue-light-color hover:text-white-color'
+            as={Link}
+            href={state.info.cv}
             target="_blank"
-            link={state.info.cv}
-          />
+          >Resume</Button>
         </div>
       </div>
 
       {/* Mobile */}
       <div
-        className={`mobile__container active fade mr-5 ${
+        className={`active fade mr-5  ${
           widthSize >= 768 && "hidden"
         }`}
       >
         {isOpen ? (
           <FaAlignCenter
-            className="text-lg text-[1.3rem] fade"
+            className="text-lg text-[1.3rem] fade cursor-pointer"
             onClick={handleToggle}
           />
         ) : (
           <FaAlignJustify
-            className="text-lg text-[1.3rem] fade"
+            className="text-lg text-[1.3rem] fade cursor-pointer"
             onClick={handleToggle}
           />
         )}
         {isOpen && (
-          <div className="mobile__container--list fade">
-            <div className="h-3/4 w-2/4 flex flex-col items-center justify-evenly">
-              <ul className="container__list--categories text-center">
+          <div className="fixed top-[6vh] bottom-0 left-0 right-0 flex flex-col justify-center items-center fade">
+            <div className="flex flex-col items-center w-2/4 h-3/4 justify-evenly">
+              <ul className="text-center">
                 {state.info.categories.map((category) => (
                   <li className="mt-5 text-lg" key={category.id}>
                     <NavLink
@@ -101,7 +100,8 @@ const Menu = () => {
                 {state.info.socialMedia.map((category) => (
                   <li key={category.id} className="mt-3 text-lg">
                     <NavLink
-                      className="w-full menu__social_media--item"
+                      className="w-full mx-2 my-3"
+                      onClick={handleToggle}
                       to={category.reference}
                       size="lg"
                     >
@@ -112,11 +112,12 @@ const Menu = () => {
               </ul>
               <div>
                 <Button
-                  classStyles="cv_button"
-                  link={state.info.cv}
-                  text="Resume"
+                  variant="bordered"
+                  className='border-blue-light-color text-blue-light-color hover:bg-blue-light-color'
+                  as={Link}
+                  href={state.info.cv}
                   target="_blank"
-                />
+                >Resume</Button>
               </div>
               <small style={{ color: "var(--blue-light-color)" }}>
                 Stay up until the Sun rises

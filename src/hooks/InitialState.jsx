@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa6";
 
 // Logo Branding
-import logo from "../../public/imagotipo.svg";
+import logo from "../../public/images/logo.png";
 
 const initialState = {
   // MENU
